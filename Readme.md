@@ -1,0 +1,1 @@
+Este é um projeto básico usando HTML, CSS E Js. É só um protótipo de um cronômetro, vou atualizando e melhorando ele com commits futuros, mas ja vou postando aqui para deixar mais organizado e registrado :)
