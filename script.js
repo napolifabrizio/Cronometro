@@ -6,8 +6,12 @@ let min2 = document.getElementsByTagName('p')[4]
 let hour1 = document.getElementsByTagName('p')[0]
 let hour2 = document.getElementsByTagName('p')[1]
 
-//button for start
+//button for start and stop
 let button = document.getElementsByTagName('button')[0]
+let parar = document.getElementsByTagName('button')[1]
+
+//let para o intervalo
+let time
 
 //valor que cada elemento vai receber para mudar o tempo
 
@@ -19,9 +23,14 @@ let hours1 = 1
 let hours2 = 1
 
 button.addEventListener('click', intervalo)
+parar.addEventListener('click', stop)
+
+function stop(){
+    clearInterval(time)
+}
 
 function intervalo() {
-    setInterval(iniciar, 0.5)
+  time = setInterval(iniciar, 0.5)
 }
 
 function iniciar() {
